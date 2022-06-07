@@ -1,4 +1,3 @@
-from crypt import methods
 from flask import Flask, render_template, redirect, request, flash
 from flask_mail import Mail, Message
 from config import email, senha
@@ -42,8 +41,8 @@ def send():
 
         msg = Message(
             subject=f'{formContato.nome} te enviou uma mensagem no Portfólio',
-            sender=app.config.ger("MAIL_USERNAME"),
-            recipients=[app.config.ger("MAIL_USERNAME")],
+            sender=app.config.get("MAIL_USERNAME"),
+            recipients=[app.config.get("MAIL_USERNAME")],
             body=f'''
 
             {formContato.nome} com o e-mail {formContato.email}, te enviou a seguinte mensagem:
