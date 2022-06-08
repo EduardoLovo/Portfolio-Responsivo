@@ -40,7 +40,7 @@ body {
 
 #header .profile .social-links a {
     font-size: 1rem;
-    background: #212431;
+    /* background: #212431; */
     color: #fff;
     padding: 0.6rem;
     margin-right: 1rem;
@@ -50,7 +50,7 @@ body {
 }
 
 #header .profile .social-links a:hover {
-    background: #149ddd;
+    color: #149ddd;
 }
 
 /* ------------------------------------- */
